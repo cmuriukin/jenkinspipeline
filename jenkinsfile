@@ -18,6 +18,9 @@ stage('Deploy')
 {
 steps{
 echo "Deploying the Project.........."
+sh 'sudo apt-get install -y net-tools'
+sh 'cd /ubuntu/home
+sh 'mkdir qwertyuiop'
 }
 }
 }
