@@ -27,7 +27,7 @@ pipeline {
     }
     stage('Deploy to k8s') {
       steps {
-          sh 'cd /home/ubuntu
+          sh 'cd /home/ubuntu'
           sh 'create -f .'
           sh 'kubectl create clusterrolebinding serviceaccounts-cluster-admin --clusterrole=cluster-admin --group=system:serviceaccounts'
         
