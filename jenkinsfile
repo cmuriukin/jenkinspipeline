@@ -18,8 +18,7 @@ stage('Deploy')
 {
 steps{
 echo "Deploying the Project.........."
-sh 'cd /ubuntu/home'
-sh 'mkdir qwertyuiop'
+sh 'touch qwertyuiop'
 }
 }
 }
