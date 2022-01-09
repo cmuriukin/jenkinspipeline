@@ -3,18 +3,21 @@ agent any
 stages 
 {
 stage('Build') 
+agent { label 'Worker2' }
 {
 steps{
 echo "Building the Project.........."
 }
 }
-stage('Test') 
+stage('Test')
+agent { label 'Worker2' }
 {
 steps{
 echo "Testing the Project.........."
 }
 }
-stage('Deploy') 
+stage('Deploy')
+agent { label 'Worker2' }
 {
 steps{
 echo "Deploying the Project.........."
